@@ -4,7 +4,7 @@ import java.util.ArrayList;
 public class task2 {
     public static void main(String[] args) {
         int num = 1000;
-        ArrayList<Integer> Results = new ArrayList<>();
+        ArrayList<Integer> results = new ArrayList<>();
         for (int i = 2; i < num; i++) {
             boolean flag = true;
             for (int j = 2; j < i; j++) {
@@ -14,9 +14,9 @@ public class task2 {
                 }
             }
             if (flag) {
-                Results.add(i);
+                results.add(i);
             }
         }
-        System.out.println(Results);
+        System.out.println(results);
     }
 }

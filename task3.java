@@ -3,20 +3,20 @@ import java.util.Scanner;
 // Задание 3. Реализовать простой калькулятор.
 public class task3 {
     public static void main(String[] args) {
-        Scanner Input = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
         System.out.print("Введите первое число: ");
-        int num1 = Input.nextInt();
+        double num1 = input.nextInt();
         System.out.print("Введите операцию: ");
-        String op = Input.next();
+        String op = input.next();
         System.out.print("Введите второе число: ");
-        int num2 = Input.nextInt();
-        Calc(num1, num2, op);
+        double num2 = input.nextInt();
+        calc(num1, num2, op);
         System.out.println();  
-        Input.close(); 
+        input.close(); 
     }
 
-    private static void Calc(int num1, int num2, String op) {
-        int result = 0;
+    private static void calc(double num1, double num2, String op) {
+        double result = 0;
         switch (op) {
             case "*" -> result = num1 * num2;
             case "/" -> result = num1 / num2;
